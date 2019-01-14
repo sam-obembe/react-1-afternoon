@@ -28,10 +28,10 @@ class FilterString extends Component{
     return(
       <div className = "puzzleBox filterStringPB">
         <h4>Filter String</h4>
-        <span className = "puzzleText">{JSON.stringify(this.state.words,null,10)}</span>
+        <span className = "puzzleText">Words: {JSON.stringify(this.state.words,null,10)}</span>
         <input className = "inputLine" onChange = {(e)=> this.handleChange(e.target.value)}></input>
-        <button className = "confirmationButton" onClick = {() => this.filterNames(this.state.userInput)}></button>
-        <span className = "resultsBox filterStringRB">{JSON.stringify(this.state.filtered,null,10)}</span>
+        <button className = "confirmationButton" onClick = {this.filterNames(this.state.userInput)}>Filter</button>
+        <span className = "resultsBox filterStringRB"> Filtered words: {JSON.stringify(this.state.filtered,null,10)}</span>
       </div>
     )
   }

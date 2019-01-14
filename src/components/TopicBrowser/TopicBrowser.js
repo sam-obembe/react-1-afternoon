@@ -3,7 +3,7 @@ import EvenAndOdds from "../Topics/EvenAndOdd";
 import FilterObject from "../Topics/FilterObject";
 import FilterString from "../Topics/FilterString";
 import Palindrome from "../Topics/Palindrome";
-import Sums from "../Topics/Sum";
+import Sum from "../Topics/Sum";
 
 class TopicBrowser extends Component{
   constructor(){
@@ -16,7 +16,7 @@ class TopicBrowser extends Component{
         <FilterObject />
         <FilterString />
         <Palindrome />
-        <Sums />
+        <Sum />
       </div>
     )
   }
